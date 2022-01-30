@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cc.caffeinatedcreators</groupId>
-	<artifactId>CC-HAX</artifactId>
+	<artifactId>GamerBootScreen</artifactId>
 	<version>1.0.0</version>
 
 	<properties>
@@ -37,11 +37,11 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>jeofetch</finalName>
+							<finalName>${project.name}</finalName>
 							<archive>
 								<manifest>
 									<mainClass>
-                                        xyz.e3ndr.jeofetch.Bootstrap
+                                        cc.caffeinatedcreators.gbs.GamerBootScreen
                                     </mainClass>
 								</manifest>
 							</archive>
@@ -89,12 +89,6 @@
 			<groupId>com.github.casterlabs.rakurai</groupId>
 			<artifactId>Util</artifactId>
 			<version>1.9.1</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>info.picocli</groupId>
-			<artifactId>picocli</artifactId>
-			<version>4.3.0</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>

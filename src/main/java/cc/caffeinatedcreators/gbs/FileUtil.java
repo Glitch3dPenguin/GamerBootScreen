@@ -1,4 +1,4 @@
-package cc.caffeinatedcreators.hax;
+package cc.caffeinatedcreators.gbs;
 
 import java.io.File;
 import java.io.IOException;

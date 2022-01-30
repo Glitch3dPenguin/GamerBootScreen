@@ -1,4 +1,4 @@
-package cc.caffeinatedcreators.hax;
+package cc.caffeinatedcreators.gbs;
 
 import java.io.IOException;
 import java.util.function.Consumer;
@@ -8,7 +8,7 @@ import xyz.e3ndr.consoleutil.ConsoleUtil;
 import xyz.e3ndr.consoleutil.ansi.ConsoleColor;
 import xyz.e3ndr.consoleutil.consolewindow.ConsoleWindow;
 
-public class Hax {
+public class GamerBootScreen {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         ConsoleUtil.summonConsoleWindow();
@@ -18,12 +18,12 @@ public class Hax {
             .setTextColor(ConsoleColor.WHITE)
             .clearScreen();
 
-//        repeat(3, (i) -> {
-//            try {
-//                window.setTitle("STARTING IN " + i);
-//            } catch (IOException | InterruptedException e) {}
-//            sleep(1000);
-//        });
+        repeat(10, (i) -> {
+            try {
+                window.setTitle("STARTING IN " + i);
+            } catch (IOException | InterruptedException e) {}
+            sleep(1000);
+        });
 
         window.setTitle("EXECUTING");
 
